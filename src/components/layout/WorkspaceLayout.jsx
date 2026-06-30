@@ -3,34 +3,24 @@ import Sidebar from "./Sidebar";
 
 export default function WorkspaceLayout() {
   return (
-    <div className="h-screen flex flex-col bg-background text-foreground">
-
+    <div className="h-screen flex flex-col bg-zinc-950 text-white">
       <Navbar />
 
-      <div className="flex flex-1 overflow-hidden">
-
+      <div className="flex flex-1">
         <Sidebar />
 
-        {/* Chat Area */}
-
-        <main className="flex-1 border-x border-border bg-background">
-
+        <main className="flex-1 flex items-center justify-center border-x border-zinc-800">
+          <h1 className="text-2xl font-bold">Chat Area</h1>
         </main>
 
-        {/* Knowledge Graph */}
-
-        <aside className="w-80 border-l border-border bg-background">
-
+        <aside className="w-80 flex items-center justify-center border-l border-zinc-800">
+          <h1 className="text-xl">Knowledge Graph</h1>
         </aside>
-
       </div>
 
-      {/* Bottom Panel */}
-
-      <div className="h-40 border-t border-border bg-background">
-
+      <div className="h-32 border-t border-zinc-800 flex items-center justify-center">
+        Bottom Panel
       </div>
-
     </div>
   );
 }

@@ -1,83 +1,56 @@
-import {
-  GitBranch,
-  Users,
-  FolderGit2
-} from "lucide-react";
+import { GitBranch, Users } from "lucide-react";
 
 export default function Sidebar() {
   return (
-    <aside className="w-72 border-r border-border bg-background">
+    <aside className="w-72 border-r border-zinc-800 p-5">
 
-      <div className="p-5">
+      <h2 className="text-sm text-zinc-500 mb-4">
+        BRANCHES
+      </h2>
 
-        <h2 className="text-sm text-muted-foreground mb-3">
+      <div className="space-y-3">
 
-          WORKSPACE
-
-        </h2>
-
-        <div className="rounded-lg border border-border p-4">
-
-          Hackathon
-
-        </div>
-
-      </div>
-
-      <div className="px-5">
-
-        <div className="flex items-center gap-2 mb-3">
-
+        <div className="flex items-center gap-2">
           <GitBranch size={16} />
-
-          <span className="font-medium">
-
-            Branches
-
-          </span>
-
+          main
         </div>
 
-        <div className="space-y-2">
+        <div className="flex items-center gap-2">
+          <GitBranch size={16} />
+          backend
+        </div>
 
-          <div>🌿 main</div>
+        <div className="flex items-center gap-2">
+          <GitBranch size={16} />
+          frontend
+        </div>
 
-          <div>🌿 backend</div>
-
-          <div>🌿 frontend</div>
-
-          <div>🌿 research</div>
-
-          <div>🌿 docs</div>
-
+        <div className="flex items-center gap-2">
+          <GitBranch size={16} />
+          research
         </div>
 
       </div>
 
-      <div className="px-5 mt-10">
+      <h2 className="text-sm text-zinc-500 mt-10 mb-4">
+        TEAM
+      </h2>
 
-        <div className="flex items-center gap-2 mb-3">
+      <div className="space-y-3">
 
+        <div className="flex items-center gap-2">
           <Users size={16} />
-
-          <span>
-
-            Team
-
-          </span>
-
+          Aryan
         </div>
 
-        <div className="space-y-2">
+        <div className="flex items-center gap-2">
+          <Users size={16} />
+          Rahul
+        </div>
 
-          <div>Aryan</div>
-
-          <div>Rahul</div>
-
-          <div>Abhi</div>
-
-          <div>Priya</div>
-
+        <div className="flex items-center gap-2">
+          <Users size={16} />
+          Priya
         </div>
 
       </div>
